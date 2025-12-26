@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Registration | Absolute Tutorial College</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="registration-page">
+    <!-- Demo Banner -->
+    <div class="demo-banner">
+        <div class="demo-banner-content">
+            <i class="fas fa-rocket"></i>
+            <span>Demo website created for <strong>Absolute Tutorial College</strong> — ready to go live in 2 hours</span>
+            <i class="fas fa-rocket"></i>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Absolute Tutorial College Logo">
+                    <div class="logo-text">
+                        <span class="logo-name">Absolute Tutorial College</span>
+                        <span class="logo-tagline">Excellence in Education</span>
+                    </div>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="subjects.html">Subjects</a></li>
+                    <li><a href="register.html" class="active">Register</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="register.html" class="btn btn-primary">Enroll Now</a>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Registration Hero -->
+    <section class="registration-hero">
+        <div class="container">
+            <h1><i class="fas fa-user-plus"></i> Online Registration</h1>
+            <p>Complete the form below to register for classes at Absolute Tutorial College</p>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="registration-section">
+        <div class="container">
+            <div class="registration-container">
+                <form class="registration-form" id="registrationForm">
+
+                    <!-- Personal Details Section -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <i class="fas fa-user"></i>
+                            Personal Details
+                        </h3>
+                        <div class="form-grid">
+                            <div class="form-group full-width">
+                                <label for="fullName">Full Name <span class="required">*</span></label>
+                                <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="idNumber">ID Number <span class="required">*</span></label>
+                                <input type="text" id="idNumber" name="idNumber" class="form-control" placeholder="e.g., 12345678901" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dateOfBirth">Date of Birth <span class="required">*</span></label>
+                                <input type="date" id="dateOfBirth" name="dateOfBirth" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="e.g., 081 123 4567" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="your.email@example.com">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Previous School Section -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <i class="fas fa-school"></i>
+                            Educational Background
+                        </h3>
+                        <div class="form-grid">
+                            <div class="form-group full-width">
+                                <label for="previousSchool">Previous School <span class="required">*</span></label>
+                                <input type="text" id="previousSchool" name="previousSchool" class="form-control" placeholder="Enter your previous school name" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Session Preference Section -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <i class="fas fa-clock"></i>
+                            Session Preference
+                        </h3>
+                        <div class="form-group">
+                            <label>Select your preferred session <span class="required">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-option" id="partTimeOption">
+                                    <input type="radio" name="session" value="Part-time (17:00 - 20:00)" required>
+                                    <div class="radio-content">
+                                        <strong><i class="fas fa-moon"></i> Part-time Session</strong>
+                                        <span>17:00 - 20:00 (Evening Classes)</span>
+                                    </div>
+                                </label>
+                                <label class="radio-option" id="fullTimeOption">
+                                    <input type="radio" name="session" value="Full-time (08:00 - 17:00)">
+                                    <div class="radio-content">
+                                        <strong><i class="fas fa-sun"></i> Full-time Session</strong>
+                                        <span>08:00 - 17:00 (Day Classes)</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Subject Selection Section -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <i class="fas fa-book-open"></i>
+                            Subject Selection
+                        </h3>
+                        <div class="form-group">
+                            <label>Select the subjects you wish to register for <span class="required">*</span></label>
+                            <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 15px;">Choose at least one subject</p>
+                            <div class="subjects-checkbox-grid">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="subjects" value="Mathematics">
+                                    <i class="fas fa-calculator"></i>
+                                    <span>Mathematics</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="subjects" value="Physical Science">
+                                    <i class="fas fa-atom"></i>
+                                    <span>Physical Science</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="subjects" value="Chemistry">
+                                    <i class="fas fa-flask"></i>
+                                    <span>Chemistry</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="subjects" value="Biology">
+                                    <i class="fas fa-dna"></i>
+                                    <span>Biology</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="subjects" value="Geography">
+                                    <i class="fas fa-globe"></i>
+                                    <span>Geography</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="subjects" value="History">
+                                    <i class="fas fa-landmark"></i>
+                                    <span>History</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="subjects" value="English">
+                                    <i class="fas fa-book"></i>
+                                    <span>English</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="subjects" value="Afrikaans">
+                                    <i class="fas fa-language"></i>
+                                    <span>Afrikaans</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="subjects" value="Oshikwanyama">
+                                    <i class="fas fa-comments"></i>
+                                    <span>Oshikwanyama</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="subjects" value="Economics">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Economics</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="subjects" value="Business Studies">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span>Business Studies</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="subjects" value="Accounting">
+                                    <i class="fas fa-balance-scale"></i>
+                                    <span>Accounting</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="subjects" value="Agriculture">
+                                    <i class="fas fa-seedling"></i>
+                                    <span>Agriculture</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hostel Accommodation Section -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <i class="fas fa-home"></i>
+                            Accommodation
+                        </h3>
+                        <div class="form-group">
+                            <label class="hostel-checkbox" id="hostelCheckbox">
+                                <input type="checkbox" name="hostel" value="Yes">
+                                <div class="hostel-content">
+                                    <strong><i class="fas fa-bed"></i> Hostel Accommodation Required</strong>
+                                    <span>Check this box if you require hostel accommodation during your studies</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Additional Information Section -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <i class="fas fa-info-circle"></i>
+                            Additional Information
+                        </h3>
+                        <div class="form-grid">
+                            <div class="form-group full-width">
+                                <label for="additionalInfo">Any additional information or special requirements</label>
+                                <textarea id="additionalInfo" name="additionalInfo" class="form-control" rows="4" placeholder="Enter any additional information, special requirements, or questions you may have..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-success btn-lg">
+                            <i class="fab fa-whatsapp"></i> Submit Registration via WhatsApp
+                        </button>
+                        <p class="form-note">
+                            <i class="fas fa-shield-alt"></i> Your information is secure and will only be used for registration purposes.
+                        </p>
+                    </div>
+                </form>
+
+                <!-- Success Message -->
+                <div class="success-message" id="successMessage">
+                    <div class="success-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <h2>Registration Submitted!</h2>
+                    <p>Your registration has been sent via WhatsApp. We will contact you shortly to confirm your enrollment.</p>
+                    <a href="index.html" class="btn btn-primary">
+                        <i class="fas fa-home"></i> Return to Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="images/logo.png" alt="Absolute Tutorial College" class="footer-logo">
+                    <h3>Absolute Tutorial College</h3>
+                    <p>Providing quality education and empowering students to achieve academic excellence in Oshakati, Namibia.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/264817639975" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:absolutetutorialcollege@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="subjects.html">Subjects</a></li>
+                        <li><a href="register.html">Online Registration</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Subjects</h4>
+                    <ul>
+                        <li><a href="subjects.html">Mathematics</a></li>
+                        <li><a href="subjects.html">Physical Science</a></li>
+                        <li><a href="subjects.html">Biology</a></li>
+                        <li><a href="subjects.html">English</a></li>
+                        <li><a href="subjects.html">View All</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Oshakati, Namibia</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+264817639975">+264 81 763 9975</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:absolutetutorialcollege@gmail.com">absolutetutorialcollege@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Absolute Tutorial College. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <img src="images/logo.png" alt="Logo">
+            <button class="mobile-menu-close"><i class="fas fa-times"></i></button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="subjects.html">Subjects</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="register.html" class="btn btn-primary btn-block">Enroll Now</a>
+    </div>
+    <div class="mobile-menu-overlay"></div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/264817639975" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
